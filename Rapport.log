@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  15 JUL 2023 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  16 JUL 2023 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,6 +316,17 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (e:/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (e:/texlive/2023/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks29
+\footnotemargin=\dimen176
+\@outputbox@depth=\dimen177
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765.
 ) (e:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (e:/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
@@ -553,21 +564,21 @@ Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `colorlinks' set `false' on input line 119.
+Package hyperref Info: Option `colorlinks' set `false' on input line 121.
  (./glossary.tex (e:/texlive/2023/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2022/11/03 v4.52 (NLCT)
  (e:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (e:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (e:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks29
-\XKV@tempa@toks=\toks30
+\XKV@toks=\toks30
+\XKV@tempa@toks=\toks31
 )
 \XKV@depth=\count429
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (e:/texlive/2023/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
-\@glsmfirst=\toks31
-\@glsmrest=\toks32
+\@glsmfirst=\toks32
+\@glsmrest=\toks33
 ) (e:/texlive/2023/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (e:/texlive/2023/texmf-dist/tex/latex/datatool/datatool-base.sty
@@ -581,11 +592,11 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2021/08/26 v2.01 AMS text
  (e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks33
-\ex@=\dimen176
+\@emptytoks=\toks34
+\ex@=\dimen178
 )) (e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen177
+\pmbraise@=\dimen179
 ) (e:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -606,7 +617,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen178
+\big@size=\dimen180
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count435
@@ -619,21 +630,21 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip21
 \c@parentequation=\count437
 \dspbrk@lvl=\count438
-\tag@help=\toks34
+\tag@help=\toks35
 \row@=\count439
 \column@=\count440
 \maxfields@=\count441
-\andhelp@=\toks35
-\eqnshift@=\dimen179
-\alignsep@=\dimen180
-\tagshift@=\dimen181
-\tagwidth@=\dimen182
-\totwidth@=\dimen183
-\lineht@=\dimen184
-\@envbody=\toks36
+\andhelp@=\toks36
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks37
 \multlinegap=\skip80
 \multlinetaggap=\skip81
-\mathdisplay@stack=\toks37
+\mathdisplay@stack=\toks38
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (e:/texlive/2023/texmf-dist/tex/latex/substr/substr.sty
@@ -677,7 +688,7 @@ Package: fp-upn 1996/10/21
 ) (e:/texlive/2023/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks38
+\@dtl@toks=\toks39
 \@dtl@tmpcount=\count454
 \dtl@tmplength=\skip82
 \dtl@sortresult=\count455
@@ -694,12 +705,12 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
 \gls@level=\count461
-\@gls@tmpb=\toks39
+\@gls@tmpb=\toks40
 \gls@tmplen=\skip83
-\glskeylisttok=\toks40
-\glslabeltok=\toks41
-\glsshorttok=\toks42
-\glslongtok=\toks43
+\glskeylisttok=\toks41
+\glslabeltok=\toks42
+\glsshorttok=\toks43
+\glslongtok=\toks44
  (e:/texlive/2023/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 ) (e:/texlive/2023/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
@@ -714,7 +725,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTpre=\skip87
 \LTpost=\skip88
 \LTchunksize=\count462
-\LTcapwidth=\dimen185
+\LTcapwidth=\dimen187
 \LT@head=\box61
 \LT@firsthead=\box62
 \LT@foot=\box63
@@ -724,7 +735,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LT@rows=\count464
 \c@LT@tables=\count465
 \c@LT@chunks=\count466
-\LT@p@ftn=\toks44
+\LT@p@ftn=\toks45
 )
 \glsdescwidth=\skip89
 \glspagelistwidth=\skip90
@@ -733,19 +744,19 @@ Package: glossary-super 2022/11/03 v4.52 (NLCT)
  (e:/texlive/2023/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count467
-\ST@wd=\dimen186
+\ST@wd=\dimen188
 \ST@rightskip=\skip91
 \ST@leftskip=\skip92
 \ST@parfillskip=\skip93
-\ST@pageleft=\dimen187
-\ST@headht=\dimen188
-\ST@tailht=\dimen189
-\ST@pagesofar=\dimen190
-\ST@pboxht=\dimen191
-\ST@lineht=\dimen192
-\ST@prevht=\dimen193
-\ST@toadd=\dimen194
-\ST@dimen=\dimen195
+\ST@pageleft=\dimen189
+\ST@headht=\dimen190
+\ST@tailht=\dimen191
+\ST@pagesofar=\dimen192
+\ST@pboxht=\dimen193
+\ST@lineht=\dimen194
+\ST@prevht=\dimen195
+\ST@toadd=\dimen196
+\ST@dimen=\dimen197
 \ST@pbox=\box66
 )) (e:/texlive/2023/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
@@ -764,24 +775,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./Rapport.aux)
 \openout1 = `Rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
+LaTeX Font Info:    ... okay on input line 132.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -820,23 +831,23 @@ LaTeX Font Info:    ... okay on input line 130.
 (e:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count468
-\scratchdimen=\dimen196
+\scratchdimen=\dimen198
 \scratchbox=\box67
 \nofMPsegments=\count469
 \nofMParguments=\count470
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks46
 \MPscratchCnt=\count471
-\MPscratchDim=\dimen197
+\MPscratchDim=\dimen199
 \MPnumerator=\count472
 \makeMPintoPDFobject=\count473
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks47
 ) (e:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (e:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 130.
+Package hyperref Info: Link coloring OFF on input line 132.
  (./Rapport.out) (./Rapport.out)
 \@outlinefile=\write6
 \openout6 = `Rapport.out'.
@@ -865,15 +876,15 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Rapport.bbl' not found.
 
 No file Rapport.bbl.
-Package biblatex Info: Reference section=0 on input line 130.
-Package biblatex Info: Reference segment=0 on input line 130.
+Package biblatex Info: Reference section=0 on input line 132.
+Package biblatex Info: Reference segment=0 on input line 132.
 (./0-title.tex
-<ressources/images/deltacad_logo.png, id=28, 306.14375pt x 99.37125pt>
+<ressources/images/deltacad_logo.png, id=32, 306.14375pt x 99.37125pt>
 File: ressources/images/deltacad_logo.png Graphic file (type png)
 <use ressources/images/deltacad_logo.png>
 Package pdftex.def Info: ressources/images/deltacad_logo.png  used on input line 5.
 (pdftex.def)             Requested size: 70.12662pt x 22.76228pt.
-<ressources/images/utc_logo.png, id=30, 1027.84pt x 259.97125pt>
+<ressources/images/utc_logo.png, id=34, 1027.84pt x 259.97125pt>
 File: ressources/images/utc_logo.png Graphic file (type png)
 <use ressources/images/utc_logo.png>
 Package pdftex.def Info: ressources/images/utc_logo.png  used on input line 5.
@@ -957,19 +968,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 5--140
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[5
+
+])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[5
-
-] (./Rapport.aux)
+[6] (./Rapport.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -979,7 +996,7 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 743692E38C5A911AD0094FCAA5D656DC;767.
+(rerunfilecheck)             Checksum: 3C5BFD1E4432103702EFED088963EEE3;912.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Rapport
@@ -990,18 +1007,18 @@ Package logreq Info: Writing requests to 'Rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28940 strings out of 475237
- 506355 string characters out of 5768555
- 1923238 words of memory out of 5000000
- 49789 multiletter control sequences out of 15000+600000
- 566790 words of font info for 49 fonts, out of 8000000 for 9000
+ 29111 strings out of 475237
+ 509203 string characters out of 5768555
+ 1924238 words of memory out of 5000000
+ 49940 multiletter control sequences out of 15000+600000
+ 573427 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,5n,96p,2249b,1785s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Rapport.pdf (6 pages, 215733 bytes).
+ 99i,8n,96p,2249b,1785s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Rapport.pdf (7 pages, 250497 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
