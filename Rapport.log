@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  16 JUL 2023 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  17 JUL 2023 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -879,12 +879,12 @@ No file Rapport.bbl.
 Package biblatex Info: Reference section=0 on input line 132.
 Package biblatex Info: Reference segment=0 on input line 132.
 (./0-title.tex
-<ressources/images/deltacad_logo.png, id=32, 306.14375pt x 99.37125pt>
+<ressources/images/deltacad_logo.png, id=36, 306.14375pt x 99.37125pt>
 File: ressources/images/deltacad_logo.png Graphic file (type png)
 <use ressources/images/deltacad_logo.png>
 Package pdftex.def Info: ressources/images/deltacad_logo.png  used on input line 5.
 (pdftex.def)             Requested size: 70.12662pt x 22.76228pt.
-<ressources/images/utc_logo.png, id=34, 1027.84pt x 259.97125pt>
+<ressources/images/utc_logo.png, id=38, 1027.84pt x 259.97125pt>
 File: ressources/images/utc_logo.png Graphic file (type png)
 <use ressources/images/utc_logo.png>
 Package pdftex.def Info: ressources/images/utc_logo.png  used on input line 5.
@@ -980,13 +980,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 [5
 
-])
+] [6]
+<ressources/images/prototype.png, id=88, 560.8453pt x 513.41812pt>
+File: ressources/images/prototype.png Graphic file (type png)
+<use ressources/images/prototype.png>
+Package pdftex.def Info: ressources/images/prototype.png  used on input line 26.
+(pdftex.def)             Requested size: 155.40106pt x 142.26378pt.
+<ressources/images/color_balance.png, id=89, 915.42pt x 544.28343pt>
+File: ressources/images/color_balance.png Graphic file (type png)
+<use ressources/images/color_balance.png>
+Package pdftex.def Info: ressources/images/color_balance.png  used on input line 33.
+(pdftex.def)             Requested size: 287.11566pt x 170.71652pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
+
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39     \item \textbf
+                      {Apprentissage automatique (machine learning): }Ce mod...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39     \item \textbf
+                      {Apprentissage automatique (machine learning): }Ce mod... <./ressources/images/prototype.png> <./ressources/images/color_balance.png>])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[6] (./Rapport.aux)
+[8] (./Rapport.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -996,7 +1022,7 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 3C5BFD1E4432103702EFED088963EEE3;912.
+(rerunfilecheck)             Checksum: DCD877296AC9DF49B88824F7CDED2780;1031.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Rapport
@@ -1007,18 +1033,18 @@ Package logreq Info: Writing requests to 'Rapport.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29111 strings out of 475237
- 509203 string characters out of 5768555
+ 29136 strings out of 475237
+ 509909 string characters out of 5768555
  1924238 words of memory out of 5000000
- 49940 multiletter control sequences out of 15000+600000
+ 49960 multiletter control sequences out of 15000+600000
  573427 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,8n,96p,2249b,1785s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb><e:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Rapport.pdf (7 pages, 250497 bytes).
+Output written on Rapport.pdf (9 pages, 302236 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

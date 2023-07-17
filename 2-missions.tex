@@ -16,3 +16,28 @@ Au début de mon stage, mes tâches étaient planifiées en trois phases :
 \end{itemize}
 
 Dans le cadre du travail réel, pour chaque phase de la tâche, je l'ai décomposée en différentes étapes. 
+
+
+\newpage
+\section{Contributions}
+Comme mentionné dans la section précédente, lorsque j'ai commencé à travailler sur le projet, il existait déjà un prototype d'interface ainsi que certains modules fonctionnels.
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=5cm]{ressources/images/prototype.png}
+    \caption{Prototype d'interface PowerEye}
+\end{figure}
+L'interface se compose de quatre modules: Image check, CND Tests, python et config editor. Il contient des méthodes d'application de de Template Matching pour la détection des pièces et des modèles d'entraînement pour les tests avec des ensembles de données.\\
+Mais le fait est que l'interface prototype n'est pas suffisante pour inclure toutes les fonctionnalités envisagées par PowerEye. Par conséquent, ma principale contribution tout au long du stage a été la conception et le développement d'une nouvelle version de l'interface \texttt{PowerEye}. À la fin du stage, la nouvelle version de l'interface de powereye ressemblait à ceci. \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm]{ressources/images/color_balance.png}
+    \caption{Interface PowerEye redessinée}
+\end{figure}
+Il contient cinq modules : 
+\begin{itemize}
+    \item \textbf{Préparation des données (Data preparation): }Ce module permet d'extraire les contours des pièces de l'image et d'ajouter du bruit de perlin à l'image. 
+    \item \textbf{Apprentissage automatique (machine learning): }Ce module est utilisé pour entraîner le modèle ckpt à partir de l'ensemble de données.
+    \item \textbf{Contrôle de la chaîne d'assemblage (flowline control): } Ce module détecte si une pièce est qualifiée par Template Matching, et enregistre les données du résultat du test.
+    \item \textbf{Interroger les données historiques  (History tracking): }Ce module interroge les données du fichier Excel par mots-clés.
+    \item \textbf{Configuration des données globales (configuration): }Ce module affiche la configuration complète du logiciel en cours et l'importe par l'intermédiaire de fichiers de configuration.
+\end{itemize}
