@@ -80,7 +80,12 @@
 \definecolor{shadecolor}{gray}{0.9}
 
 %\pagenumbering{arabic}
-
+% Numérotation des figures sans la référence à la partie
+\renewcommand{\thefigure}{\arabic{figure}}
+\counterwithout{figure}{chapter}
+% A TESTER
+\counterwithout{table}{chapter}
+\counterwithout{footnote}{chapter}
 %%% Quelques champs
 \newcommand{\reportsubject}{Développement de l'interface homme-machine pour l'inspection automatisée}  % Internship purpose
 \newcommand{\reportauthor}{Zhentao \textsc{XU}} % Author
@@ -125,7 +130,7 @@
 
 
 \input{glossary}
-
+\renewcommand*{\glstextformat}[1]{\textbf{#1}}
 
 \pagenumbering{gobble}
 %%%%% Début du document %%%%%
@@ -139,5 +144,6 @@
 \input{0.3-introduction.tex}
 \input{1-presentation_Deltacad.tex}
 \input{2-missions.tex}
+\printglossaries
 \end{document}
 \grid
