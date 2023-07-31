@@ -36,7 +36,7 @@ Les données font partie du modèle dans le cadre de MVVM, je les ai également 
 Après avoir présenté la partie du modèle, j'aimerais expliquer la conception de la disposition de l'interface graphique, c'est-à-dire la partie concernant la vue dans le cadre de MVVM. La \hyperref[fig:target]{\textsc{figure 2}} montre le style d'interface du \texttt{PowerEye}, qui semble se composer de trois parties. Mais ce n'est pas vraiment ce que j'ai fait avec l'interface au début. Au départ, j'ai choisi le \texttt{Tabcontrol} pour séparer les modules et les développer à partir de là. L'interface conçue à ce moment-là est illustrée ci-dessous.
 \begin{figure}[H]
     \centering
-    \includegraphics[height=8cm]{ressources/images/Interface_original.png}
+    \includegraphics[height=9cm]{ressources/images/Interface_original.png}
     \caption{La Conception initiale de l'interface}
 \end{figure}
 
@@ -46,7 +46,7 @@ J'ai donc finalement choisi d'abandonner cette solution et d'utiliser
 \texttt{Contentcontrol} pour la disposition de l'interface. Plus précisément, j'ai divisé l'interface globale en trois parties: la barre des modules, la barre des fonctions et la fenêtre principale. En sélectionnant le module, différentes barres de fonctions s'affichent, puis la fenêtre principale est affichée en cas de sélection de la fonction. Et grâce à la caractéristique du \texttt{Contentcontrol}, nous pouvons injecter l'interface en tant que contrôle, ce qui permet le développement indépendant des différentes parties. La disposition finale de l'interface est illustrée ci-dessous.
 \begin{figure}[H]
     \centering
-    \includegraphics[height=8cm]{ressources/images/PowerEye_Disposition.jpg}
+    \includegraphics[height=9cm]{ressources/images/PowerEye_Disposition.jpg}
     \caption{ La disposition finale de l’interface}
 \end{figure}
 
@@ -68,7 +68,7 @@ L'objectif de cette interface est d'extraire le contour de la pièce sur le phot
 Lors de la conception de l'interface graphique pour cette fonctionnalité, j'ai suivi l'idée générale selon laquelle la partie supérieure de l'interface est utilisée pour la sélection de la configuration. Dans la partie inférieure de l'interface, j'ai conçu une barre de progression et une fenêtre pour montrer l'image avant et après le traitement. 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=8.5cm]{ressources/images/imageExtract.png}
+    \includegraphics[height=8cm]{ressources/images/imageExtract.png}
     \caption{l'interface graphique d'extraction d'images}
 \end{figure}
 
@@ -83,17 +83,17 @@ En ce qui concerne l'intégration de la fonctionnalité d'extraction développé
 L'objectif de cette interface est d'ajouter un masque de bruit à l'image pour générer des pièces comportant des défauts. Comme dans la partie précédent, il existe déjà une fonction permettant d'ajouter des masques de bruit, développée à l'aide de python. L'idée de conception et la manière de fonctionner de cette partie sont similaires à la précédente, que je vais brièvement présenter ici. L'interface graphique est présentée comme ci-dessous. 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=8cm]{ressources/images/perlin_noise.png}
+    \includegraphics[height=7cm]{ressources/images/perlin_noise.png}
     \caption{l'interface graphique d'ajout du bruit}
 \end{figure}
 
 Et dans la section, je vais me concentrer sur la méthode d'appel python et sur une amélioration que j'ai réalisée. Pour l'appel au module python, je me réfère à l'implémentation de l'interface prototype. La classe \texttt{process} en C\# me permet d'exécuter python et de passer le script à lancer comme les paramètres de démarrage. Et dans la mise en œuvre, j'ai également encapsulé le processus python, y compris les valeurs d'entrée et de sortie, dans une classe pour le réutiliser dans le module d'apprentissage automatique. 
 
-En termes d'améliorations, la fonction d'ajout de bruit nécessite trois paramètres d'entrée: une image de la pièce, un masque de bruit et un masque de forme. 
+En termes d'améliorations, la fonction d'ajout de bruit nécessite deux paramètres d'entrée: une image de la pièce et un masque de forme. 
 \begin{figure}[H]
     \centering
     \includegraphics[height=4cm]{ressources/images/input_perlin.png}
-    \caption{trois paramètres d'entrée}
+    \caption{deux paramètres d'entrée}
 \end{figure}
 Mais en effet, il n'est pas difficile d'obtenir le masque de forme d'une pièce à partir de l'image initial. Par conséquent, j'ai développé la fonction pour générer les masques de forme afin de réduire la paramètre d'entrée. Les étapes pour réaliser cette fonction sont les suivantes: 
 \begin{enumerate}
@@ -106,11 +106,27 @@ Mais en effet, il n'est pas difficile d'obtenir le masque de forme d'une pièce 
 
 Après avoir terminé cette partie de l'amélioration, le module de préparation des données est désormais plus robuste, ce qui permet de passer au module d'apprentissage automatique qui utilise les données.
 
+
+\newpage
 \subsection{Apprentissage automatique}
+Ce module utilise l'ensemble de données pour entraîner le modèle et l'appliquer à la détection d'images. 
 
+Pour la mise en œuvre spécifique, j'ai choisi d'être cohérent avec la section sur l'ajout de bruit afin d'appeler des scripts python pour des fonctions telles que l'apprentissage du modèle. D'une part, comme j'ai séparé le processus python en une classe, il est pratique de la réutiliser, et d'autre part, les entrées et sorties étant déjà définies dans la classe, il est approprié de les afficher dans une interface.
 
+Les scripts python sur l'apprentissage automatique étant développés par les laboratoires collaborant au projet, donc je ne les présenterai pas dans ce rapport. 
+
+En ce qui concerne la conception de l'interface, je me réfère principalement à la réalisation du prototype d'interface, dont je ne fais ici qu'une brève démonstration.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=7cm]{ressources/images/machine_learning.png}
+    \caption{Interface graphique d'apprentissage automatique}
+\end{figure}
+
+\newpage
 \subsection{Contrôle de la chaîne d'assemblage} 
 Ce module, qui est l'application la plus importante de tout le logiciel, permet de détecter les images des pièces sur la ligne d'assemblage et de sauvegarder les données.
+
 
 \subsubsection{Surveillance de la ligne d'assemblage}
 L'idée de cette fonction est d'utiliser le modèle entraîné pour inspecter chaque image de pièce et d'afficher les résultats de l'inspection dans l'interface. Mais pendant le développement, il était impossible d'accéder aux capteurs dans la scène réelle. J'ai donc utilisé un processus qui copie les images dans un répertoire toutes les cinq secondes comme une alternative. 
@@ -139,21 +155,24 @@ Et pour les pièces dont la qualification n'est pas certaine, vous pouvez les v�
     \caption{Interface graphique pour la vérification manuelles}
 \end{figure}
 
+\newpage
 \subsection{Suivi des données relatives aux pièces}
 Le module est conçu pour une utilisation à long terme et retracer les données de la pièce précédente enregistrées dans des fichiers \gls{Excel}. 
 
 \subsubsection{Interroger les données historiques}
-L'idée de cette fonction est d'afficher le fichier \gls{Excel} sélectionné dans l'interface, d'effectuer une recherche par mot-clé et d'enregistrer les résultats de la recherche. 
+L'idée de cette fonction est d'afficher le fichier Excel sélectionné dans l'interface, d'effectuer une recherche par mot-clé et d'enregistrer les résultats de la recherche. 
 
-Dans la conception de l'interface, J'utilise une grille de données pour afficher les données d'un fichier \gls{Excel}, une barre de sélection pour choisir le type de données à filtrer et une zone de texte pour saisir des mots-clés. 
+Dans la conception de l'interface, J'utilise une grille de données pour afficher les données d'un fichier Excel, une barre de sélection pour choisir le type de données à filtrer et une zone de texte pour saisir des mots-clés. 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=9cm]{ressources/images/information_search.png}
+    \includegraphics[height=7cm]{ressources/images/information_search.png}
     \caption{Interface graphique pour l'interrogation de l'historique }
 \end{figure}
 
 Afin de lire le fichier Excel, une extension \texttt{ClosedXML} est utilisée, ce qui me permet d'obtenir le contenu du fichier par chemin et de le stocker dans la classe \texttt{DataTable}.  J'ai ainsi créé deux fonctions pour convertir un chemin d'accès en \texttt{DataView} contenant un tableau et un chemin d'accès en une liste contenant les lignes d'en-tête d'un tableau. Et pour obtenir cette fonction de filtrage, la propriété \texttt{RowFilter} de \texttt{DataView} est tout à fait appropriée, il suffit de changer sa valeur en fonction de différents mots-clés pour modifier le contenu de l'affichage. Enfin, pour pouvoir enregistrer le tableau filtrée, il est nécessaire de créer une classe \texttt{DataView} qui supprime effectivement les données en fonction du \texttt{RowFilter} et de la convertir en utilisant l'extension. 
 
+
+\newpage
 \subsection{Configuration des données globales}
 Le module est principalement conçu pour permettre aux développeurs de compléter la sélection de la configuration de plusieurs modules directement par l'importation de fichiers de configuration afin de faciliter les tests. Par ailleurs, dans les scénarios d'application pratique, la construction de l'environnement d'exécution peut également être facilitée par une configuration globale.
 
@@ -168,31 +187,65 @@ En termes de conception de l'interface graphique, cette section est plutôt simp
 \end{figure}
 
 \subsubsection{Importation de configuration}
-Cette interface est conçue pour appliquer les configurations précédemment sauvegardées à l'ordinateur. En utilisant la désérialisation \gls{XML}, nous pouvons reconstruire le fichier sauvegardé en classe de données de \texttt{PowerEye}. Dans la classe de données, j'ai implémenté une fonction de copie pour chaque sous-classe afin de remplacer la valeur par la valeur générée par le fichier. 
+Cette interface est conçue pour appliquer les configurations précédemment sauvegardées à l'ordinateur. En utilisant la désérialisation XML, nous pouvons reconstruire le fichier sauvegardé en classe de données de \texttt{PowerEye}. Dans la classe de données, j'ai implémenté une fonction de copie pour chaque sous-classe afin de remplacer la valeur par la valeur générée par le fichier. 
 
-
+Dans la conception de l'interface, j'utilise un \texttt{DataView} pour afficher le fichier xml dans le répertoire sélectionné, et une autre zone de texte pour afficher le contenu du fichier sélectionné. Après avoir sélectionné un profil, vous pouvez l'appliquer en cliquant sur le bouton ci-dessus.
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm]{ressources/images/configuration_files.png}
-    \caption{Interface graphique montrant la configuration globale}
+    \caption{Interface graphique pour appliquer la configuration}
 \end{figure}
 
+En outre, non seulement pour la configuration globale, mais aussi pour chaque interface, j'ai conçu des boutons permettant d'appliquer la configuration à des fonctions individuelles. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=4cm]{ressources/images/configuration_individuel.png}
+    \caption{Fonctionnalité de configuration appliquée à des interfaces individuelles}
+\end{figure}
 
-
-
-
-
-
-
+De cette manière, le processus de développement est largement facilité et l'individualisation pour chaque utilisateur est possible.
 
 \subsection{Flux de travail personnalisés}
+Cette partie est conçue pour permettre aux utilisateurs d'ajouter les fonctionnalités dont ils ont besoin pour personnaliser leur flux de travail. En termes de réalisation, il est nécessaire de disposer de la fonction d'ajout et de suppression d'interfaces, car une interface fonctionnelle peut être appliquée de manière répétée dans l'application réelle. Il faut donc résoudre un problème : comment s'assurer que les données de l'interface ne sont pas affectées après l'ajout ou la suppression de l'interface ?
+
+\subsubsection{Navigation d'interface}
+Afin de pouvoir ajouter et supprimer des interfaces, j'ai développé une classe de navigation d'interface pour stocker les instances de l'interface. Cette classe comporte de fonction permettant d'enregistrer la nouvelle interface dans la liste correspondante après sa création. Dans la fonction d'interface de suppression, par le bouton cliqué dans la barre de fonctions, l'instance peuvent être localisée pour procéder à la suppression. En outre, lorsque vous supprimez une instance d'interface, il faut également supprimer la partie des données qui lui correspond. Par conséquent, pour chaque interface, j'ai ajouté une fonction permettant de supprimer les données correspondantes via le \texttt{datacontext}, afin de réaliser cette fonctionnalité.
+
+En termes de conception de l'interface graphique, j'ai modifié la barre de fonctions en ajoutant des boutons d'édition sur lesquels il est possible de cliquer pour personnaliser les fonctions qu'ils contiennent.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=6cm]{ressources/images/workflow.png}
+    \caption{Interface graphique pour des flux de travail personnalisés}
+\end{figure}
+
 \section{Fonctions en dehors du corps principal}
 Dans le dernière partie de mes réalisations, je vais présenter deux fonctionnalités que j'ai développées en dehors du corps principal du logiciel. Bien que ces deux fonctions ne constituent pas directement le logiciel, elles contribuent au processus de tests.
 \subsection{Affichage de l'appel de fonction}
+Dans cette section, je décrirai ma mise en œuvre de l'affichage de l'état d'exécution d'une fonction basée sur le cadre AOP.
+
+Le cadre AOP est un paradigme de programmation qui vise à séparer les préoccupations transversales des préoccupations principales dans un programme. En d'autres termes, AOP permet de modulariser les aspects qui se répètent à travers différentes parties d'un système logiciel. Cette fonctionnalité rend non nécessaire l'ajout d'une commande qui affiche l'état d'exécution de toutes les fonctions, une par une. De plus, vous pouvez enregistrer les informations relatives à l'entrée, à la sortie et à 
+l'exception de la fonction. 
+
+Dans l'implémentation concrète, j'ai utilisé l'extension open source \texttt{fody}, qui me permet de refactoriser les trois fonctions OnEntry, OnExit, OnException pour faire en sorte que les fonctions d'entrée, de sortie et d'exception des trois cas effectuent les opérations requises. Et il le fait en ajoutant l'attribut à la fonction pour appliquer la méthode. 
+
+Au final, j'ai obtenu l'effet d'afficher l'interface et les paramètres utilisés lors de l'entrée et de la sortie de la fonction, et d'afficher un message d'erreur lorsque la fonction est anormale. La figure suivante montre l'effet au moment de l'exécution.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[height=7cm]{ressources/images/aop_log.png}
-    \caption{l'interface graphique d'ajout du bruit}
+    \includegraphics[height=6cm]{ressources/images/aop_log.png}
+    \caption{Affichage de l'appel de fonction}
 \end{figure}
-\subsection{Exécution de la chaîne de caractères comme un script}
 
+\newpage
+\subsection{Exécution de la chaîne de caractères comme un script}
+Dans cette section, je décrirai comment j'ai mis en œuvre la possibilité d'exécuter des chaînes de caractères en c\# en tant que scripts. Grâce à cette fonction, je peux exécuter directement la couche d'application du programme sans avoir besoin d'une interface graphique.
+
+Dans le processus de mise en œuvre, j'ai utilisé le compilateur open-source .NET \texttt{Roslyn} en important trois extensions : 
+\begin{itemize}
+\item Microsoft.CodeAnalysis.CSharp
+\item Microsoft.CodeAnalysis.Scripting
+\item Microsoft.CodeAnalysis.CSharp.Scripting
+\end{itemize}
+Cela permet de compiler directement des types \texttt{string}. 
+Grâce à cette implémentation, il n'est pas nécessaire d'utiliser une interface graphique pour tester les fonctions, ce qui simplifie le processus de test.

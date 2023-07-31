@@ -1,0 +1,44 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Table des figures}{3}{chapter*.3}%
+\contentsline {chapter}{Résumé technique}{4}{chapter*.4}%
+\contentsline {chapter}{Introduction}{5}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Présentation de Deltacad}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Présentation génerale}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Les produits}{7}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Mission}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sujet de stage}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Planning de stage}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Contributions}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Outils et technologies}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Validation de travaux}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Prise de recul}{13}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Intérêt de mon travail}{13}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Améliorations à envisager}{13}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Réflexions sur l’impact de mon travail}{13}{subsection.2.6.3}%
+\contentsline {chapter}{\numberline {3}Réalisations}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Architecture globale de PowerEye}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Modèle de conception}{14}{subsection.3.1.1}%
+\contentsline {subsubsection}{Présentation du MVVM}{14}{subsection.3.1.1}%
+\contentsline {subsubsection}{Application pratique}{15}{subsection.3.1.1}%
+\contentsline {subsubsection}{Avantages de ce choix}{16}{figure.3.4}%
+\contentsline {subsection}{\numberline {3.1.2}Structure des données}{16}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Disposition de l'interface graphique}{17}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Multiples modules pour PowerEye}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Préparation des données}{19}{subsection.3.2.1}%
+\contentsline {subsubsection}{Extraction d'images}{19}{subsection.3.2.1}%
+\contentsline {subsubsection}{Ajout du bruit de perlin}{20}{Item.3}%
+\contentsline {subsection}{\numberline {3.2.2}Apprentissage automatique}{22}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Contrôle de la chaîne d'assemblage}{23}{subsection.3.2.3}%
+\contentsline {subsubsection}{Surveillance de la ligne d'assemblage}{23}{subsection.3.2.3}%
+\contentsline {subsubsection}{Sauvegarde des données de pièces}{24}{figure.3.13}%
+\contentsline {subsection}{\numberline {3.2.4}Suivi des données relatives aux pièces}{25}{subsection.3.2.4}%
+\contentsline {subsubsection}{Interroger les données historiques}{25}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Configuration des données globales}{26}{subsection.3.2.5}%
+\contentsline {subsubsection}{Affichage des informations sur la configuration actuelle}{26}{subsection.3.2.5}%
+\contentsline {subsubsection}{Importation de configuration}{27}{figure.3.17}%
+\contentsline {subsection}{\numberline {3.2.6}Flux de travail personnalisés}{28}{subsection.3.2.6}%
+\contentsline {subsubsection}{Navigation d'interface}{28}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Fonctions en dehors du corps principal}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Affichage de l'appel de fonction}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Exécution de la chaîne de caractères comme un script}{30}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Conclusion}{31}{chapter.4}%
