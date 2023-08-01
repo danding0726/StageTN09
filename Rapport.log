@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  31 JUL 2023 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.15)  1 AUG 2023 10:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1284,6 +1284,9 @@ Overfull \hbox (0.68195pt too wide) in paragraph at lines 2--3
 
 ])
 No file Rapport.gls.
+
+LaTeX Warning: Empty bibliography on input line 155.
+
 [32] (./Rapport.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
