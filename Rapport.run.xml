@@ -80,7 +80,7 @@
       <file>Rapport.bcf</file>
     </requires>
     <requires type="editable">
-      <file>7-bibliographie.bib</file>
+      <file>bibliographie.bib</file>
     </requires>
   </external>
 </requests>

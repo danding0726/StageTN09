@@ -7,7 +7,7 @@ Le choix du modèle de conception influe grandement sur la manière de développ
 \subsubsection{Présentation du MVVM}
 Il existe trois composants principaux dans le modèle MVVM : le modèle, la vue et le modèle de vue. Chacun sert un objectif distinct. La vue est chargée de définir la structure, la disposition et l’apparence de ce que l’utilisateur voit à l’écran. Le modèle de vue implémente des propriétés et des commandes avec lesquelles la vue peut effectuer une liaison aux données. Les classes de modèle sont des classes non visuelles qui encapsulent les données de l’application. Ainsi, le modèle peut être considéré comme une représentation du modèle de domaine de l’application, qui comprend généralement un modèle de données avec une logique métier et une logique de validation. \\
 \subsubsection{Application pratique}
-Au début de la conception du \texttt{PowerEye}, nous avons décidé d'utiliser \gls{WPF} pour le développement du logiciel. Et \gls{WPF} offre une fonctionalité très important, à savoir la liason de données. C'est le processus qui établit une connexion entre l’IU du logiciel et les données affichées. Si la liaison est correctement paramétrée et si les données fournissent les notifications appropriées, lorsque les données changent de valeur, les éléments qui sont liés aux données reflètent automatiquement ces changements. Comme le montre la figure ci-dessous, lorsque la source de la liaison de données est modifiée, la valeur target de la liaison est modifiée en conséquence. En pratique, nous pouvons lier les propriétés des contrôles au modèle des données.
+Au début de la conception du \texttt{PowerEye}, nous avons décidé d'utiliser \gls{WPF} pour le développement du logiciel. Et WPF offre une fonctionalité très important, à savoir la liason de données. C'est le processus qui établit une connexion entre l’\gls{IU} du logiciel et les données affichées. Si la liaison est correctement paramétrée et si les données fournissent les notifications appropriées, lorsque les données changent de valeur, les éléments qui sont liés aux données reflètent automatiquement ces changements. Comme le montre la figure ci-dessous, lorsque la source de la liaison de données est modifiée, la valeur target de la liaison est modifiée en conséquence. En pratique, nous pouvons lier les propriétés des contrôles au modèle des données.
 \begin{figure}[H]
     \centering
     \includegraphics[height=3cm]{ressources/images/basic-data-binding-diagram.png}
@@ -138,22 +138,31 @@ Dans la conception de l'interface, j'ai choisi d'utiliser différentes couleurs 
     \caption{Interface graphique de la surveillance de la ligne d'assemblage}
 \end{figure}
 
- Les pièces dont le score est inférieur à 90 sont considérées comme non qualifiées, celles dont le score est supérieur ou égal à 95 sont considérées comme qualifiées, et celles dont le score est compris entre 90 et 95 doivent être testées à nouveau manuellement. La réalisation de la fonctionnalité utilise la même approche que dans la section précédente, en utilisant  un \texttt{thread} et \texttt{FileWathcer} pour assurer l'interaction de l'interface.
+ Les pièces dont le score est inférieur à 90 sont considérées comme non qualifiées, celles dont le score est supérieur ou égal à 95 sont considérées comme qualifiées, et celles dont le score est compris entre 90 et 95 doivent être testées à nouveau manuellement. La réalisation de la fonctionnalité utilise la même approche que dans la section précédente, en utilisant  un \texttt{thread} et \texttt{FileWathcer} pour assurer l'interaction de l'interface. Les étapes pour réaliser cette fonction sont les suivantes: 
+\begin{enumerate}
+    \item Créez un nouveau \texttt{thread} de discussion pour copier les images dans le répertoire de destination après avoir cliqué sur le bouton de déclencher.
+    \item \texttt{FileWatcher} détecte les nouveaux fichiers au fur et à mesure de leur apparition et les traite en vue de leur évaluation à l'aide de \texttt{Template Matching} ou de modèles de formation.
+    \item Créer une nouvelle classe de pièce pour stocker les résultats détectés et les présenter à l'interface graphique par le \texttt{Binding}.
+   
+\end{enumerate}
 
 \subsubsection{Sauvegarde des données de pièces}
 Une fois la pièce analysée, ses données sont sauvegardées dans une autre interface. Dans cette interface, j'ai conçu trois listes pour stocker les données des différents types de pièces, y compris son temps de production, le nombre de points gagnés et le chemin où l'image est sauvegardée. 
 \begin{figure}[H]
     \centering
     \includegraphics[height=8cm]{ressources/images/check_parts.png}
-    \caption{Interface graphique pour le stockage des données relatives aux pièces }
+    \caption{Interface graphique pour le stockage des données relatives aux pièces}
 \end{figure}
 
-Et pour les pièces dont la qualification n'est pas certaine, vous pouvez les vérifier manuellement en cliquant sur la liste. Une nouvelle fenêtre apparaît alors et l'état de la pièce peut être vérifié en faisant glisser l'image vers la gauche ou la droite. 
+Et pour les pièces dont la qualification n'est pas certaine, vous pouvez les vérifier manuellement en cliquant sur la liste. Une nouvelle fenêtre apparaît alors et l'état de la pièce peut être vérifié en faisant glisser l'image vers la gauche ou la droite. L'interface d'opération spécifique est illustrée ci-dessous.
 \begin{figure}[H]
     \centering
     \includegraphics[height=6cm]{ressources/images/check_manuel.png}
     \caption{Interface graphique pour la vérification manuelles}
 \end{figure}
+
+Dans la mise en œuvre spécifique, principalement en détectant les coordonnées du déplacement de la souris, la couleur et le texte sont liés à la taille de la valeur des coordonnées.
+
 
 \newpage
 \subsection{Suivi des données relatives aux pièces}

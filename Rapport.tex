@@ -73,7 +73,7 @@
 }
 %%% Bibliographie
 \usepackage[backend=biber,style=numeric-comp]{biblatex}
-\addbibresource{7-bibliographie.bib}
+\addbibresource{bibliographie.bib}
 %\bibliographystyle{plain}
 %\bibliography{bibliographie}
 %%%%% Configuration %%%%%
@@ -129,7 +129,6 @@
 \setcounter{tocdepth}{1}
 
 
-
 \input{glossary}
 \renewcommand*{\glstextformat}[1]{\textbf{#1}}
 \makeglossaries
@@ -153,5 +152,6 @@
 \input{4-conclusion}
 \printglossaries
 \printbibliography[title={Bibliographie},heading={bibintoc}]
+\label{LastPage}
 \end{document}
 \grid
